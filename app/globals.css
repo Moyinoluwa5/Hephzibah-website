@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-body antialiased;
+  }
+
+  a {
+    color: #2c7cb0;
+    text-underline-offset: 3px;
+  }
+
+  a:hover {
+    color: #1f5d86;
+  }
+
+  :focus-visible {
+    outline: 3px solid #e39b45;
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: #f6c6ce;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Section rhythm shared by every band on every page */
+  .section-pad {
+    padding-block: clamp(34px, 4.6vw, 88px);
+    padding-inline: clamp(20px, 4vw, 64px);
+  }
+
+  .section-pad-tight {
+    padding-block: clamp(28px, 3.4vw, 56px);
+    padding-inline: clamp(20px, 4vw, 64px);
+  }
+
+  /* Typography */
+  .eyebrow {
+    @apply font-body font-bold uppercase;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+  }
+
+  .h-display {
+    @apply font-display font-semibold;
+    font-size: clamp(38px, 5.6vw, 76px);
+    line-height: 1.08;
+    text-wrap: pretty;
+  }
+
+  .h1 {
+    @apply font-display font-semibold;
+    font-size: clamp(32px, 4.6vw, 62px);
+    line-height: 1.1;
+    text-wrap: pretty;
+  }
+
+  .h2 {
+    @apply font-display font-semibold;
+    font-size: clamp(26px, 3.4vw, 46px);
+    line-height: 1.12;
+    text-wrap: pretty;
+  }
+
+  .h3 {
+    @apply font-display font-semibold;
+    font-size: clamp(20px, 2cqw, 22px);
+    line-height: 1.25;
+  }
+
+  .pull-quote {
+    @apply font-display font-medium;
+    font-size: clamp(19px, 1.7vw, 29px);
+    line-height: 1.4;
+    text-wrap: pretty;
+  }
+
+  .body-copy {
+    @apply font-body;
+    font-size: 16.5px;
+    line-height: 1.7;
+  }
+
+  .body-copy-sm {
+    @apply font-body;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-bold no-underline;
+    font-family: var(--font-nunito);
+    font-size: 16.5px;
+    padding: 15px 26px;
+    min-height: 48px;
+    transition: transform 150ms ease, background 150ms ease;
+    white-space: nowrap;
+  }
+
+  .btn:hover {
+    text-decoration: none;
+  }
+
+  .btn-primary {
+    @apply bg-sky text-white;
+  }
+
+  .btn-primary:hover {
+    background: #1f5d86;
+    transform: translateY(-2px);
+    color: #fff;
+  }
+
+  .btn-primary-hero:hover {
+    background: #3a94ce;
+    transform: translateY(-2px);
+    color: #fff;
+  }
+
+  .btn-outline-light {
+    @apply text-paper;
+    border: 1.5px solid rgba(248, 249, 250, 0.6);
+    background: transparent;
+  }
+
+  .btn-outline-light:hover {
+    background: rgba(248, 249, 250, 0.16);
+    color: #f8f9fa;
+  }
+
+  .btn-outline-dark {
+    @apply text-ink;
+    border: 1.5px solid rgba(46, 51, 56, 0.28);
+    background: transparent;
+  }
+
+  .btn-outline-dark:hover {
+    background: rgba(46, 51, 56, 0.06);
+    color: #2e3338;
+  }
+
+  .btn-fill-light {
+    @apply text-[#1E2C36];
+    background: #7ec4e8;
+  }
+
+  .btn-fill-light:hover {
+    background: #bfe2f5;
+    color: #1e2c36;
+  }
+
+  /* Form fields */
+  .field-label {
+    @apply flex flex-col gap-1.5 text-sm font-bold;
+  }
+
+  .field-control {
+    font: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    min-height: 48px;
+    padding: 10px 14px;
+    border: 1px solid rgba(46, 51, 56, 0.28);
+    background: #ffffff;
+    color: #2e3338;
+    border-radius: 12px;
+  }
+
+  /* Cards */
+  .card-news {
+    @apply flex flex-col gap-3 rounded-card bg-white no-underline text-ink;
+    border: 1px solid rgba(46, 51, 56, 0.14);
+    padding: 22px;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+  }
+
+  .card-news:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(44, 74, 92, 0.14);
+    color: #2e3338;
+  }
+
+  .ticker-track:hover,
+  .ticker-track[data-paused="true"] {
+    animation-play-state: paused;
+  }
+
+  .badge {
+    @apply inline-flex self-start rounded-full font-body font-extrabold uppercase tnum;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    padding: 6px 12px;
+  }
+}
