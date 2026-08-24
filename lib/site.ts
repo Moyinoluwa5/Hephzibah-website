@@ -1,10 +1,10 @@
 export const SITE = {
-  name: "Hephzibah Kings and Queens Montessori School",
+  name: "Hephzibah Kings and Queens Montessori Schools",
   shortName: "Hephzibah",
   motto: "The chosen generation. Where leaders are made.",
   phoneDisplay: "0813 024 7140",
   phoneTel: "tel:+2348130247140",
-  email: "hello@hephzibahmontessori.ng",
+  email: "",
   address: {
     line1: "3 Memunat Omotayo Oluwa Crescent",
     line2: "Via Goriola, Erunwen",

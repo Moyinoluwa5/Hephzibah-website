@@ -54,7 +54,7 @@ export default function ContactPage() {
 
       <div className="mt-6.5 flex flex-wrap gap-3">
         <a
-          href="https://wa.me/2348130247140"
+          href="https://wa.me/2347080293675"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-fill-light"

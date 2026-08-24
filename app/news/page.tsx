@@ -2,27 +2,16 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "News and events",
-  description: "News and events at Hephzibah Kings and Queens Montessori School.",
+  description:
+    "News and events at Hephzibah Kings and Queens Montessori School.",
 };
 
 const NEWS = [
   {
-    date: "12 Sep 2026",
+    date: "14 Sep 2026",
     title: "Resumption day",
     tint: "bg-sky-tint",
     fg: "text-sky-press",
-  },
-  {
-    date: "24 Sep 2026",
-    title: "Parent evening: reading without worksheets",
-    tint: "bg-pink-tint",
-    fg: "text-pink-deep",
-  },
-  {
-    date: "08 Oct 2026",
-    title: "Upper Elementary going out: Lekki Conservation Centre",
-    tint: "bg-orange-tint",
-    fg: "text-orange-deep",
   },
 ];
 

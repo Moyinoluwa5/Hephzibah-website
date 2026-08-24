@@ -113,7 +113,7 @@ export default function RegistrationForm() {
           type="checkbox"
           className="h-[22px] w-[22px] accent-sky"
         />
-        Reply to me on Whatsapp
+        Reply to me on Whatsapp: 07080293675
       </label>
 
       <button

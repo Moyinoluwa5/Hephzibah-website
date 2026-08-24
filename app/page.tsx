@@ -80,14 +80,18 @@ export default function HomePage() {
             Montessori, primary and secondary · Ikorodu, Lagos
           </p>
           <h1 className="h-display mb-[clamp(12px,1.4vw,20px)]">
-            Every child here is already a <span className="text-sky-pale">sovereign</span>.
+            Every child here is already a{" "}
+            <span className="text-sky-pale">sovereign</span>.
           </h1>
           <p className="mb-[clamp(20px,2.4vw,32px)] max-w-[48ch] text-[clamp(16px,1.35vw,20px)] leading-relaxed text-paper/[.94]">
-            We don&rsquo;t make children sit still. We prepare a room so good they choose to
-            concentrate — and then we get out of the way.
+            We don&rsquo;t make children sit still. We prepare a room so good
+            they choose to concentrate — and then we get out of the way.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/admissions" className="btn btn-primary-hero bg-sky text-white">
+            <Link
+              href="/admissions"
+              className="btn btn-primary-hero bg-sky text-white"
+            >
               Register your child now →
             </Link>
             <Link href="/about" className="btn btn-outline-light">
@@ -102,8 +106,8 @@ export default function HomePage() {
         <p className="m-0 font-serif text-[clamp(20px,2vw,27px)] italic leading-snug text-orange-deep">
           MOTTO: THE CHOSEN GENERATION
           <br />
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;WHERE LEADERS ARE
-          MADE
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp;WHERE LEADERS ARE MADE
         </p>
         <p className="eyebrow m-0 ml-auto text-orange-deep">Our motto</p>
       </section>
@@ -122,29 +126,30 @@ export default function HomePage() {
       <section className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] items-start gap-[clamp(24px,3.4vw,60px)] section-pad">
         <div className="overflow-hidden rounded-panel bg-sky-tint">
           <ImagePlaceholder
-            alt="Mrs. Olatunji Oluwatoyin on campus, warm daylight, not a studio backdrop."
+            alt="Miss Olatunji Oluwatoyin Elizabeth on campus, warm daylight, not a studio backdrop."
             ratio="4 / 5"
           />
         </div>
         <div>
           <p className="eyebrow mb-2.5 text-sky">Head of School</p>
           <p className="pull-quote mb-4 text-slate">
-            Parents usually ask me the same question on a tour: &ldquo;But will she be able to sit
-            for common entrance?&rdquo; The answer is yes, and here is why that is the least
-            interesting thing about her.
+            Parents usually ask me the same question on a tour: &ldquo;But will
+            she be able to sit for common entrance?&rdquo; The answer is yes,
+            and here is why that is the least interesting thing about her.
           </p>
           <p className="body-copy mb-3.5 max-w-[60ch] text-ink-soft">
-            A child who has chosen her own work every morning for three years knows how to sit
-            with a hard thing until it opens. Examinations are the easy part of that. What takes
-            longer to build is the appetite.
+            A child who has chosen her own work every morning for three years
+            knows how to sit with a hard thing until it opens. Examinations are
+            the easy part of that. What takes longer to build is the appetite.
           </p>
           <p className="body-copy mb-5.5 max-w-[60ch] text-ink-soft">
-            Come on any school morning. Stand at the back of a classroom for twenty minutes and
-            watch who is doing the work. It will not be the adults.
+            Come on any school morning. Stand at the back of a classroom for
+            twenty minutes and watch who is doing the work. It will not be the
+            adults.
           </p>
           <p className="m-0 text-[15px] leading-snug">
             <span className="block font-display text-[23px] font-semibold text-slate">
-              Olatunji Oluwatoyin
+              Miss Olatunji Oluwatoyin Elizabeth
             </span>
             Head of School
           </p>
@@ -162,9 +167,9 @@ export default function HomePage() {
           <p className="eyebrow mb-2.5 text-sky">Admissions 2026/2027</p>
           <h2 className="h2 mb-3.5 text-slate">Admission in progress</h2>
           <p className="body-copy mb-5.5 text-ink-soft">
-            Register your child with one short form, then come and see the school on any school
-            morning. About two weeks from first message to a place held in your child&rsquo;s
-            name.
+            Register your child with one short form, then come and see the
+            school on any school morning. About two weeks from first message to
+            a place held in your child&rsquo;s name.
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <Link href="/admissions" className="btn btn-primary">
@@ -209,8 +214,8 @@ export default function HomePage() {
             {SITE.visitHours}
           </p>
           <p className="mb-5.5 max-w-[46ch] text-[15.5px] leading-relaxed text-paper/[.8]">
-            We do not run school buses. Drop-off is at the gate from 7:00am, and a staff member on
-            the crescent until 8:00am.
+            We do not run school buses. Drop-off is at the gate from 7:00am, and
+            a staff member on the crescent until 8:00am.
           </p>
           <div className="flex flex-wrap gap-3">
             <a
@@ -236,13 +241,14 @@ export default function HomePage() {
           </div>
           <div className="flex aspect-video items-end rounded-panel border border-paper/[.28] bg-paper/[.08] p-4">
             <p className="m-0 text-[13.5px] text-paper/[.85]">
-              Map — Erunwen, Ikorodu, pinned at the gate. Static tiles, loaded on tap.
+              Map — Erunwen, Ikorodu, pinned at the gate. Static tiles, loaded
+              on tap.
             </p>
           </div>
         </div>
       </section>
 
-      {/* A day at Hephzibah */}
+      {/* A day at Hephzibah
       <section className="section-pad bg-ash">
         <h2 className="h2 mb-6.5 text-slate">
           A day at Hephzibah Kings and Queens Montessori School
@@ -253,7 +259,9 @@ export default function HomePage() {
               key={d.time}
               className="grid grid-cols-[56px_1fr] gap-[clamp(14px,2vw,32px)] border-t border-ink/[.16] py-[clamp(14px,1.6vw,22px)] sm:grid-cols-[76px_1fr]"
             >
-              <span className="tnum font-display text-xl font-semibold text-sky">{d.time}</span>
+              <span className="tnum font-display text-xl font-semibold text-sky">
+                {d.time}
+              </span>
               <span>
                 <span className="mb-1 block font-display text-xl font-semibold text-slate">
                   {d.title}
@@ -265,7 +273,7 @@ export default function HomePage() {
             </li>
           ))}
         </ol>
-      </section>
+      </section> */}
     </>
   );
 }

@@ -9,11 +9,7 @@ const FAQS = [
   },
   {
     q: "Do you teach in English?",
-    a: "Yes, all instruction is in English. Yoruba is taught three times a week, and French from Lower Elementary.",
-  },
-  {
-    q: "Is there homework?",
-    a: "Not in the Montessori section. From Lower Elementary there is reading every night and one piece of research work a week.",
+    a: "Yes, all instruction is in English. Yoruba is taught once a week, and French from Lower Elementary.",
   },
   {
     q: "Do you run a school bus?",
@@ -45,7 +41,9 @@ export default function FaqAccordion() {
               className="flex min-h-[44px] w-full items-baseline gap-4 py-4.5 text-left font-display text-xl font-semibold text-slate"
             >
               <span className="flex-1">{f.q}</span>
-              <span className="text-2xl leading-none text-sky">{isOpen ? "−" : "+"}</span>
+              <span className="text-2xl leading-none text-sky">
+                {isOpen ? "−" : "+"}
+              </span>
             </button>
             {isOpen && (
               <p

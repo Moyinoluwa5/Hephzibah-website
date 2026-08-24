@@ -24,10 +24,16 @@ export default function Header() {
           {SITE.email}
         </a>
         <div className="ml-auto hidden gap-4.5 sm:flex">
-          <Link href="/parent-portal" className="text-paper/85 no-underline hover:text-white">
+          <Link
+            href="/parent-portal"
+            className="text-paper/85 no-underline hover:text-white"
+          >
             Parent Portal
           </Link>
-          <Link href="/careers" className="text-paper/85 no-underline hover:text-white">
+          <Link
+            href="/careers"
+            className="text-paper/85 no-underline hover:text-white"
+          >
             Careers
           </Link>
           <a
@@ -50,10 +56,10 @@ export default function Header() {
             className="mr-auto flex min-w-0 flex-wrap items-baseline gap-x-2 no-underline"
           >
             <span className="font-display text-[22px] font-bold leading-tight text-slate sm:text-[26px]">
-              Hephzibah
+              HEPHZIBAH
             </span>
-            <span className="hidden w-full font-body text-[11px] font-bold uppercase tracking-[.1em] text-sky md:block">
-              Kings and Queens Montessori School
+            <span className="hidden w-full font-body text-[15px] font-bold uppercase tracking-[.1em] text-sky md:block">
+              KINGS AND QUEENS MONTESSORI SCHOOLS
             </span>
           </Link>
 
