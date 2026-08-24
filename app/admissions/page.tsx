@@ -26,22 +26,6 @@ const STEPS = [
     fg: "text-sky-press",
     bg: "bg-sky-tint",
   },
-  {
-    n: "3",
-    title: "Offer",
-    body: "A written offer with the class, the start date and the fee schedule. Held for ten days.",
-    when: "Week two",
-    fg: "text-pink-deep",
-    bg: "bg-pink-tint",
-  },
-  {
-    n: "4",
-    title: "Enrol",
-    body: "Admission fee and first term’s fees, health form, and the uniform fitting.",
-    when: "Week two",
-    fg: "text-orange-deep",
-    bg: "bg-orange-tint",
-  },
 ];
 
 export default function AdmissionsPage() {
@@ -51,8 +35,9 @@ export default function AdmissionsPage() {
         <p className="eyebrow mb-2.5 text-sky">Admissions 2026/2027</p>
         <h1 className="h1 mb-3.5 text-slate">Admission in progress</h1>
         <p className="max-w-[56ch] text-[clamp(16px,1.35vw,19px)] leading-relaxed text-ink-soft">
-          Register your child, come and see the school, then take an offer — about two weeks from
-          first message to a place held in your child&rsquo;s name.
+          Register your child, come and see the school, then take an offer —
+          about two weeks from first message to a place held in your
+          child&rsquo;s name.
         </p>
       </section>
 
@@ -89,7 +74,8 @@ export default function AdmissionsPage() {
         <div>
           <h2 className="h2 mb-3.5">Register your child now</h2>
           <p className="mb-3 max-w-[44ch] text-[16.5px] leading-relaxed text-paper/[.9]">
-            Five fields. We reply the same working day, on WhatsApp if you prefer it.
+            Five fields. We reply the same working day, on WhatsApp if you
+            prefer it.
           </p>
           <p className="m-0 text-[15.5px] leading-relaxed text-paper/[.78]">
             Or call {SITE.phoneDisplay} between 8:00am and 4:30pm.
